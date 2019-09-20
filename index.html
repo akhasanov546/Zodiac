@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Chinese Zodiac</title>
+
+      <script>
+
+        var monkey = "<img src = 'monkey.jpg' height = '500px' width = '500px'>";
+
+        var rooster = "<img src = 'rooster.jpg' height = '500px' width = '500px'>";
+
+        var dog = "<img src = 'dog.jpg' height = '500px' width = '500px'>";
+
+        var pig = "<img src = 'pig.jpg' height = '500px' width = '500px'>";
+
+        var rat = "<img src = 'rat.jpg' height = '500px' width = '500px'>";
+
+        var ox = "<img src = 'ox.jpg' height = '500px' width = '500px'>";
+
+        var tiger = "<img src = 'tiger.jpg' height = '500px' width = '500px'>";
+
+        var rabbit = "<img src = 'rabbit.jpg' height = '500px' width = '500px'>";
+
+        var dragon = "<img src = 'dragon.jpg' height = '500px' width = '500px'>";
+
+        var snake = "<img src = 'snake.jpg' height = '500px' width = '500px'>";
+
+        var horse = "<img src = 'horse.jpg' height = '500px' width = '500px'>";
+
+        var sheep = "<img src = 'goat.jpg' height = '500px' width = '500px'>";
+
+
+        function zodiac()
+        {
+        var year = document.getElementById("input").value;
+        year = parseInt(year);
+        if (year % 12 == 0)
+        {
+            document.getElementById("sign").innerHTML = monkey;
+        }
+        else if (year % 12 == 1)
+        {
+          document.getElementById("sign").innerHTML = rooster;
+        }
+        else if (year % 12 == 2)
+        {
+          document.getElementById("sign").innerHTML = dog;
+        }
+        else if (year % 12 == 3)
+        {
+          document.getElementById("sign").innerHTML = pig;
+        }
+        else if (year % 12 == 4)
+        {
+          document.getElementById("sign").innerHTML = rat;
+        }
+        else if (year % 12 == 5)
+        {
+          document.getElementById("sign").innerHTML = ox;
+        }
+        else if (year %  12 == 6)
+        {
+          document.getElementById("sign").innerHTML = tiger;
+        }
+        else if (year %  12 == 7)
+        {
+          document.getElementById("sign").innerHTML = rabbit;
+        }
+        else if (year % 12 == 8)
+        {
+          document.getElementById("sign").innerHTML = dragon;
+        }
+        else if (year % 12 == 9)
+        {
+
+          document.getElementById("sign").innerHTML = snake;
+        }
+        else if (year % 12 == 10)
+        {
+          document.getElementById("sign").innerHTML = horse;
+        }
+        else if (year % 12 == 11)
+        {
+          document.getElementById("sign").innerHTML = goat;
+        }
+        else
+        {
+          alert("Error");
+        }
+      }
+
+      </script>
+
+      <style>
+      h1{
+        font-size: 115px;
+        font-style: italic;
+        color: #A9A9A9;}
+
+        p{
+          font-size: 60px;
+          font-family: italic;
+          color:black;
+        }
+
+        body{
+          background-image: url("astro.jpg");
+
+
+        }
+      </style>
+
+  </head>
+  <body>
+    <center><h1>Chinese Zodiac</h1></center>
+    <br>
+    <p>Type your year of birth to find what is your Chinese Zodiac.</p>
+    <br>
+    <input type = "text" value = "Year of Birth" id = "input">
+    <input type = "button" value = "Confirm" onclick = "zodiac()">
+    <br>
+    <span id = "sign"></span>
+  </body>
+</html>
